@@ -6,6 +6,12 @@ A API utilizada foi a do [The Movie Database (TMDB)](https://www.themoviedb.org/
 
 ---
 
+## Deploy
+
+https://giovanniflix.vercel.app/
+
+---
+
 ## Tecnologias Utilizadas
 
 * **React.js**
@@ -80,6 +86,7 @@ Para consumir a API do TMDB, é necessário ter uma **API Key**:
 ## Autor
 
 Desenvolvido por **Giovanni**
+
 Projeto criado com o propósito de **aprender, testar e evoluir** no uso de APIs e React.
 
 ---
