@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# GiovanniFlix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**GiovanniFlix** é um projeto desenvolvido com fins de estudo, com o objetivo de praticar o **consumo de APIs REST**, manipulação de **dados locais com LocalStorage** e gerenciamento de componentes no **React**.
 
-## Available Scripts
+A API utilizada foi a do [The Movie Database (TMDB)](https://www.themoviedb.org/), permitindo listar, salvar e excluir filmes diretamente do navegador.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **React.js**
+* **React Router DOM**
+* **Axios**
+* **TMDB API**
+* **LocalStorage**
+* **Hooks (useState, useEffect)**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Conceitos Estudados
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Requisições HTTP com `Axios`
+* Uso de parâmetros (`params`) para paginação da API
+* Armazenamento de dados no navegador com `localStorage`
+* Manipulação e exclusão de itens com chaves únicas (`id`)
+* Renderização condicional e mapeamento de listas (`map`)
+* Organização de rotas e componentes no React
+* Formatação de dados (ex: nota dos filmes com `.toFixed(1)`)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Funcionalidades
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ Listar filmes diretamente da API do TMDB
+ Exibir informações básicas como título, imagem e avaliação
+ Salvar filmes favoritos no LocalStorage
+ Excluir filmes salvos por ID (token/hook identificador)
+ Navegação entre páginas e visualização individual de filmes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Interface
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+O layout segue um estilo simples e intuitivo, destacando os filmes com seus pôsteres e notas.
+Ao salvar um filme, ele aparece na página **“Meus Filmes”**, e pode ser removido com apenas um clique.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ⚙️ Como Executar o Projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Clonar o repositório
+git clone https://github.com/ogiovannibr/giovanniflix.git
 
-## Learn More
+# Entrar na pasta
+cd giovanniflix
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Instalar dependências
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Iniciar o servidor de desenvolvimento
+npm start
+```
 
-### Code Splitting
+Após iniciar, o projeto estará disponível em:
+ **[http://localhost:3000](http://localhost:3000)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## API Key
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Para consumir a API do TMDB, é necessário ter uma **API Key**:
 
-### Making a Progressive Web App
+1. Crie uma conta gratuita em [https://www.themoviedb.org](https://www.themoviedb.org)
+2. Vá até **Configurações > API**
+3. Copie sua chave e substitua no arquivo de configuração da API:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Desenvolvido por **Giovanni**
+Projeto criado com o propósito de **aprender, testar e evoluir** no uso de APIs e React.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Licença
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto é apenas para **fins educacionais** e não possui fins comerciais.
+Todos os direitos de imagens e informações pertencem ao **The Movie Database (TMDB)**.
